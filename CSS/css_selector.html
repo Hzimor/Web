@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS选择器</title>
+	<style type="text/css">
+		/*标签选择器 群组选择器*/
+		h1,p{color: black; font-family: 黑体;}
+		/*ID（唯一）选择器*/
+		#a{color: green;font-family: 新宋体}
+		/*class选择器*/
+		.one{color: red;font-family: 华文行楷;font-size: 30px}
+		/*全局选择器*/
+		*{text-align: center;}
+		/*p 标签中所有em样式*/
+		p em{font-size: 30px}
+		/*div 父标签中所有的p子标签标签*/
+		div>p{color: orange;font-family: 仿宋;font-size:25px}
+		/*父子选择器*/
+		div>p>b{font-size: 30px;}
+		/*特殊选择器*/
+		a:link{color: gray;}
+		a:visited{color: red;}
+		a:hover{color: green;}
+		a:active{color: yellow;}
+	</style>
+</head>
+<body>
+	<h1>云顶之奕</h1>
+	<p>弈起来</p>
+	<p id="a"><em>加油</em>，超越自己！</p>
+	<p class="one">一起共联盟！</p>
+	<div>
+		<p>小小指挥官，助你登巅峰<b>！</b></p>
+		<P>共集大家智慧，创造无限可能<b>！</b></P>
+	</div>
+	<a href="https://lol.qq.com/main.shtml" target="_blank">点击加入&gt;&gt;</a>
+</body>
+</html>
