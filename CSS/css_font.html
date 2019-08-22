@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS字体</title>
+	<style type="text/css">
+		.a{font-family: Arial,sans-serif; font-size: 1em; }  /*sans-serif1 em=16px*/
+		.b{font-family: Times New Roman,serif; font-size: 16px;} /*serif*/
+		.c{font-family: 宋体,monospace; font-size: 1.5em;}
+		.d{font-family: 新宋体;font-size: 24px; font-style: normal;}
+		.e{font-family: 华文行楷,cursive; text-transform: full-width;}
+		.f{font-family: 楷体;text-decoration: line-through gray wavy;} 
+		.g{font-family: 黑体;font-weight: bold;text-decoration: line-through;}
+		.h{font-family: 微软雅黑; text-decoration: overline;}
+		#i{text-transform: uppercase; text-decoration: underline; text-shadow: 1px 5px 5px orange,-1px 6px 6px red;}
+
+	</style>
+</head>
+<body>
+	<p class="a">在这片黑的可怕的夜里</p>
+	<p class="b">一只萤火虫闯了进来</p>
+	<p class="c">它希望它来拯救这夜</p>
+	<p class="d">夜，开始跑，跑到了阴暗的角落里寻找慰藉</p>
+	<p class="e">萤火虫，开始追，追到了漆黑的角落找寻希望</p>
+	<p class="f">一点一滴，一滴一点，时间不停的跑过去</p>
+	<p class="g">夜在发抖，萤火虫在憨憨的笑</p>
+	<p class="h">哗，光过来了，夜灰溜溜的走了，萤火虫还在笑，轻快的翅膀带它回到了的它的家</p>
+	<p id="i">i love you</p>
+	<!-- 
+	serif	有衬线的字体 （衬线一词是指字体笔画尾端的小装饰，存在于某些印刷体字体中
+	sans-serif	没有衬线的字体。	
+	monospace	每个字符具有相同宽度的字体，通常用于代码列表。	
+	cursive	用于模拟笔迹的字体，具有流动的连接笔画。
+	fantasy	用来装饰的字体
+	 -->
+	 <!-- ######################################################################## -->
+	<!-- CSS 提供了 4 种常用的属性来改变文本的样子：
+
+	font-style: 用来打开和关闭文本 italic (斜体)。 可能的值如下 (你很少会用到这个属性，除非你因为一些理由想将斜体文字关闭斜体状态)：
+	normal: 将文本设置为普通字体 (将存在的斜体关闭)
+	italic: 如果当前字体的斜体版本可用，那么文本设置为斜体版本；如果不可用，那么会利用 oblique 状态来模拟 italics。
+	oblique: 将文本设置为斜体字体的模拟版本，也就是将普通文本倾斜的样式应用到文本中。
+	font-weight: 设置文字的粗体大小。这里有很多值可选 (比如 -light, -normal, -bold, -extrabold, -black, 等等), 不过事实上你很少会用到 normal 和 bold以外的值：
+	normal, bold: 普通或者加粗的字体粗细
+	lighter, bolder: 将当前元素的粗体设置为比其父元素粗体更细或更粗一步。100–900: 数值粗体值，如果需要，可提供比上述关键字更精细的粒度控制。
+	text-transform: 允许你设置要转换的字体。值包括：
+	none: 防止任何转型。
+	uppercase: 将所有文本转为大写。
+	lowercase: 将所有文本转为小写。
+	capitalize: 转换所有单词让其首字母大写。
+	full-width: 将所有字形转换成全角，即固定宽度的正方形，类似于等宽字体，允许拉丁字符和亚洲语言字形（如中文，日文，韩文）对齐。
+	text-decoration: 设置/取消字体上的文本装饰 (你将主要使用此方法在设置链接时取消设置链接上的默认下划线。) 可用值为：
+	none: 取消已经存在的任何文本装饰。
+	underline: 文本下划线.
+	overline: 文本上划线
+	line-through: 穿过文本的线 strikethrough over the text.
+	你应该注意到 text-decoration 可以一次接受多个值，如果你想要同时添加多个装饰值， 比如 text-decoration: underline overline.。同时注意 text-decoration 是一个缩写形式，它由 text-decoration-line, text-decoration-style 和 text-decoration-color 构成。你可以使用这些属性值的组合来创建有趣的效果，比如 text-decoration: line-through red wavy. -->
+	<!--########################################################################################-->
+	<!--
+	使用 text-shadow 属性。这最多需要 4 个值，如下例所示：
+	#a{text-shadow: 4px 4px 5px red;}
+	4 个属性如下:
+	1.阴影与原始文本的水平偏移，可以使用大多数的 CSS 单位 length and size units, 但是 px 是比较合适的。这个值必须指定。
+	2.阴影与原始文本的垂直偏移;效果基本上就像水平偏移，除了它向上/向下移动阴影，而不是左/右。这个值必须指定。
+	3.模糊半径 - 更高的值意味着阴影分散得更广泛。如果不包含此值，则默认为0，这意味着没有模糊。可以使用大多数的 CSS 单位 length and size units.
+	4.阴影的基础颜色，可以使用大多数的 CSS 颜色单位 CSS color unit. 如果没有指定，默认为 black.
+
+	可以通过包含以逗号分隔的多个阴影值，将多个阴影应用于同一文本
+	-->
+	</body>
+</html>
